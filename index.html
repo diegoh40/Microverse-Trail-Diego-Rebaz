@@ -13,27 +13,27 @@
     <p id="description">Thank you for taking the time to help us improve the platform</p>
 
     <form id = "survey-form">
-      <label id="name-label">
+      <label id="name-label">Name:
         <input 
         type="text" 
         id="name" 
         name="name" 
         placeholder="Your name"
         for = "name-label"
-        required/>Name:
+        required/>
       </label>
 
-      <label id="email-label">
+      <label id="email-label"> Email:
         <input 
         type="email" 
         id="email" 
         name="email" 
         placeholder="Your email"
         for = "email-label"
-        required/>Email:
+        required/>
       </label>
 
-      <label id="number-label">
+      <label id="number-label"> Age:
         <input 
         type="number" 
         id = "number" 
@@ -41,7 +41,7 @@
         placeholder="your age" 
         for = "number-label"
         min = "18" 
-        max = "60" />Age:
+        max = "60" />
       </label>
       
        
@@ -112,10 +112,16 @@
           />Jazz</label
         >
       </div>
-      <label>
-        <textarea> Text Area:
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          id="text"
+          class="input-textarea"
+          name="text"
+          placeholder="any comments?"
+        ></textarea>
+      </div>
 
-      </label>
       <div class="form-group">
         <button type="submit" id="submit" class="submit-button">
           Submit
